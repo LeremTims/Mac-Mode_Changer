@@ -6,7 +6,7 @@ def run_commands(commands):
 
 mac_address_commands = [
     "ifconfig [THE NAME OF YOUR INTERFACE] down",
-    "ifconfig [THE NAME OF YOUR INTERFACE] hw ether {NEW MAC ADDRESS]",
+    "ifconfig [THE NAME OF YOUR INTERFACE] hw ether [NEW MAC ADDRESS]",
     "ifconfig [THE NAME OF YOUR INTERFACE] up"
 ]
 
