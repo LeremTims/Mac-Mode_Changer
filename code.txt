@@ -1,0 +1,28 @@
+import subprocess
+
+def run_commands(commands):
+    for command in commands:
+        subprocess.run(command, shell=True)
+
+mac_address_commands = [
+    "ifconfig [THE NAME OF YOUR INTERFACE] down",
+    "ifconfig [THE NAME OF YOUR INTERFACE] hw ether {NEW MAC ADDRESS]",
+    "ifconfig [THE NAME OF YOUR INTERFACE] up"
+]
+
+monitor_mode_commands = [
+    "ifconfig [THE NAME OF YOUR INTERFACE] down",
+    "airmon-ng check kill",
+    "iwconfig [THE NAME OF YOUR INTERFACE] mode monitor",
+    "ifconfig [THE NAME OF YOUR INTERFACE] up",
+]
+
+# Run the first set of commands
+run_commands(mac_address_commands)
+print("[+] Ran MAC Address Command")
+
+# Run the second set of commands
+run_commands(monitor_mode_commands)
+print("[+] Ran Monitor Mode Command")
+
+  
