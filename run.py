@@ -19,8 +19,8 @@ monitor_mode_commands = [
 
 # Run the first set of commands
 run_commands(mac_address_commands)
-print("[+] Ran MAC Address Command")
+print("[+] Changed MAC Address")
 
 # Run the second set of commands
 run_commands(monitor_mode_commands)
-print("[+] Ran Monitor Mode Command")
+print("[+] Changed to Monitor Mode")
